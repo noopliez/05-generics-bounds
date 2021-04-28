@@ -3,7 +3,7 @@ package ohm.softa.a05.tests.collections;
 import ohm.softa.a05.collections.SimpleFilter;
 import ohm.softa.a05.collections.SimpleList;
 import ohm.softa.a05.collections.SimpleListImpl;
-import ohm.softa.a05.tests.models.Person;
+import ohm.softa.a05.tests.models.PlantTests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
@@ -77,8 +77,8 @@ class SimpleListTests {
 	@Test
 	void testAddEmpty() throws Exception {
 		logger.info("Testing to add a new empty list element");
-		SimpleList<Person> l = new SimpleListImpl<>();
-		l.addDefault(Person.class);
+		SimpleList<PlantTests> l = new SimpleListImpl<>();
+		l.addDefault(PlantTests.class);
 		assertEquals(1, l.size());
 	}
 
